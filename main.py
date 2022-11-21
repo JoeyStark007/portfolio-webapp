@@ -3,7 +3,7 @@ import streamlit as st
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/photo.jpg", width=400)
+    st.image("images/photo.jpg")
 
 with col2:
     st.title("Joseph Tefera")
@@ -18,7 +18,7 @@ with col2:
     st.info(content)
 
 content0 = """
-Below you can find some of the apps I built while watching a course on by Ardit. 
+Below you can find some of the apps I built while watching a course on Udemy by Ardit. 
 Feel free to contact me.
 """
 st.write(content0)
