@@ -16,3 +16,9 @@ with col2:
     
     """
     st.info(content)
+
+content0 = """
+Below you can find some of the apps I built while watching a course on by Ardit. 
+Feel free to contact me.
+"""
+st.write(content0)
