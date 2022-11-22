@@ -1,7 +1,6 @@
 import streamlit as st
 from send_email import send_email_m
 st.title("Contact Me")
-st.header("Linkedin")
 
 with st.form(key='email_form'):
     user_email = st.text_input("Your email address")
