@@ -1,4 +1,6 @@
+import pandas
 import streamlit as st
+import pandas as pd
 
 col1, col2 = st.columns(2)
 
@@ -22,3 +24,13 @@ Below you can find some of the apps I built while watching a course on Udemy by 
 Feel free to contact me.
 """
 st.write(content0)
+
+col3, col4 = st.columns(2)
+
+df = pandas.read_csv("data.csv", sep=";")
+with col3:
+    for index, row in df[:11].iterrows():
+        st.header(row["title"])
+with col4:
+    for index, row in df[11:].iterrows():
+        st.header(row["title"])
